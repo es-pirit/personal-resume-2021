@@ -356,7 +356,7 @@ interface Array<T> {
      * @param searchElement The element to search for.
      * @param fromIndex The position in this array at which to begin searching for searchElement.
      */
-    includes<U extends T>(searchElement: T | Empty, fromIndex?: number): searchElement is U;
+    includes(searchElement: T | Empty, fromIndex?: number): boolean;
 
     /**
      * Performs the specified async action for each element in an array

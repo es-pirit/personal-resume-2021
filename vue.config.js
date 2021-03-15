@@ -1,6 +1,7 @@
 /* prettier-ignore */
 const globalSassFiles = [
-    "./src/assets/styles/_themes.scss"
+    "./src/assets/styles/_themes.scss",
+    "./src/assets/styles/_mixins.scss",
 ];
 
 module.exports = {

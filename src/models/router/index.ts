@@ -3,12 +3,11 @@ import { createRouter, createWebHashHistory, RouteRecordRaw } from "vue-router";
 import { getStore } from "@/models/store";
 
 function createNav() {
-    return getStore().site.nav.map((v, i) => {
-        const name = v.toCamelCase(true);
+    return getStore().site.nav.map((name, i) => {
         const route = {
-            path: `/${ v }`,
+            path: `/${ name }`,
             name,
-            component: () => import(/* webpackChunkName: "pages/[request]" */ `@/views/pages/${ name }.vue`),
+            component: () => import(/* webpackChunkName: "pages/[request]" */ `@/views/pages/${ name.toCamelCase(true) }.vue`),
         } as RouteRecordRaw;
 
         if (i === 0) route.alias = "/";
@@ -23,6 +22,9 @@ const routes = [
 const router = createRouter({
     history: createWebHashHistory(),
     routes,
+    scrollBehavior(to, from, savedPosition) {
+        return false;
+    },
 });
 // router.beforeEach(async (to, from, next) => {
 //     next();

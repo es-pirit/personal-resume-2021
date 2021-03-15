@@ -1,6 +1,173 @@
 {
-	"nav": {
-		"resume": "Resume",
-		"portfolio": "Portfolio"
-	}
+    "author": "Yu-Kai Chang",
+    "nav": {
+        "resume": "Resume",
+        "portfolio": "Portfolio"
+    },
+    "implements": {
+        "resume": [
+            "Vue 3.0 Framework", "RWD", "Infinite Scroll"
+        ],
+        "portfolio": [
+            "Vue 3.0 Framework", "RWD", "Parallax Scrolling", "GitHub API"
+        ]
+    },
+    "titles": {
+        "intro": "Self-introduction",
+        "experiences": "Work Experience",
+        "education": "Highest Education",
+        "skills": "Special Skills",
+        "description": "Description",
+        "points": "Technical Points",
+        "demo": "Demo: "
+    },
+    "intro": [
+        "I'm specialized in using Vue.js and LayaAir, a H5 game engine, and familiar with TypeScript. And I also have experience in digital drawing and UI / UX design. I'm patient and passionate about teamwork and have confidence in completing projects independently.", "In my current position, I'm mainly responsible for building up casino games and the front-end website. I'm capable of designing AWD and RWD layouts and logic for different devices or platforms, and also act as a communication bridge between the art designers and the back-end programmers to develop projects more efficiently. I also have ever joined projects about designing educational games and taught mathematics and programming as a part-time teacher.", "I'm willing to take any position related to web, game design or digital creation. I'm always devoted to my job and will be appreciated to have the opportunity of making contributions to the company with my talents and experiences."
+    ],
+    "experiences": [
+        {
+            "name": "Philippines, Oriental Game Inc. (OG, W-Tech)",
+            "content": [
+                "Title: Front-end Team Leader, 2.5 years.", "Used Vue.js framework to develop casino products; Currently, using LayaAir engine to develop next generation of the product.", "Led projects, and in collaboration with the Philippine natives."
+            ]
+        },
+        {
+            "name": "Ifalo Inc.",
+            "content": [
+                "Title: Front-end, 2.5 years.", "Used the game engines (LayaAir, Flash / AIR) to establish gaming projects and built up the front-end web (Vue.js).", "Act as a bridge between the art designers and the back-end programmers."
+            ]
+        },
+        {
+            "name": "Xiang Shang International Inc.",
+            "content": [
+                "Title: Intern at As 3.0 System Department.", "Learned the PureMVC framework and helped to debug the program."
+            ]
+        },
+        {
+            "name": "Educational-game design Projects",
+            "content": [
+                "Content: Design educational games and collect researching-use data, 4 projects.", "Participated in project planning, game design, UI design, and programming independently.", "Used PHP to access the MySQL database to manage the users' account in order to collect researching-use data."
+            ]
+        }
+    ],
+    "education": [
+        {
+            "name": "National Changhua University of Education (NCUE)",
+            "content": [
+                "Master's Degree.", "Major is Information Management (IM).", "Learn about game design, front-end design, UI / UX design."
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "Expert in Vue.js (Html ​​5 + TypeScript + Sass)",
+            "content": [
+                "Led the development of products, and have capabilities of designing RWD layouts for the device and platform, and multi-language feature.", "Understood the basic configuration of Webpack and used modules.", "Understood Using some plugins, such as Vuex, Router, Axios, I18n, jQuery and etc.", "In addition to Vue.js 2.x, due to keen on learning, have experience for using 3.0.", "Be able to design RWD and AWD layouts."
+            ]
+        },
+        {
+            "name": "Expert in LayaAir (TypeScript)",
+            "content": [
+                "Expert in ES standards and TypeScript (e.g. Decorator, Proxy, WebSocket), and have ability to build some tools to optimize development (e.g. DeepProxy, based MVVM frameworks)", "Expert in LayaAir and FairyGUI to design RWD layouts, and understand how to optimize accessing resources.", "Experience in developing H5 games.", "Experience in using PureMVC framework."
+            ]
+        },
+        {
+            "name": "Others",
+            "content": [
+                "Experience in development independently and led the projects.", "Experience in Flash/AIR game engine.", "Experience in Google Script to operate google drive and its files.", "Experience in PHP to access MySQL.", "Have obtained the international license (OCAJP, OCPJP)."
+            ]
+        }
+    ],
+    "portfolio": {
+        "panda-mobile": {
+            "name": "OG Plus Live Game",
+            "note": "AWD, RWD: Desktop, Mobile ver.; Trial: TEST environment, choose any user",
+            "description": [
+                "Use Vue.js to build online casino game, and led the project to cooperate with the Philippine natives.", "The content includes Multi-table, and a variety of games (Baccarat, Dragon Tiger, Three Cards, Niuniu, Roulette, and etc.).", "From development to on-line maintenance, I learned its culture and market demand, understood how to cooperate with the back-end, and learned a lot of graphics rendering, video playback and other technologies."
+            ],
+            "points": [
+                "Use Vue.js framework to build a H5 games; after considering optimization and market demand, now working to reconstruct it by LayaAir engine.", "Use Paper.js kit to draw roadmap to solve the problems of too many image elements; use of NodePlayer kit to play live stream.", "Use WebSocket protocol to communicate with the backend.", "For desktop and mobile, built by AWD layouts; for portrait and landscape of mobile, built by RWD layouts."
+            ]
+        },
+        "live-casino": {
+            "name": "Live Casino",
+            "note": "Mobile ver.",
+            "description": [
+                "Use LayaAir construct mobile version of the H5 game.", "With Flash elimination, privately take the project to complete the core features for two months, including the Lobby, Baccarat, and Multi-table."
+            ],
+            "points": [
+                "Use LayaAir, a game engine, to build H5 games.", "Use NodePlayer kit to stream live video.", "Use WebSocket protocol to communicate with the backend."
+            ]
+        },
+        "summon-magicrystal": {
+            "name": "Summon of Magicrystal",
+            "note": "Trial account: test, Password: test",
+            "description": [
+                "Use Adobe AIR to build a educational game project, which is teaching Newton's Laws of Motion.", "A private part-time project."
+            ],
+            "points": [
+                "use Adobe AIR, a game engine, to build Windows applications game.", "Use AmfPHP to communicate with back-end and access database."
+            ]
+        },
+        "slot-ghost": {
+            "name": "Slot Games",
+            "note": "AWD: Desk, Mobile ver.",
+            "description": [
+                "I used the game engine to build up cross-device games that provided variety themes to make players have more fun in the slot games.", "While constructing the H5 web games, I was able to complete the UI layout and the front-end programming independently. Also, I cooperated well with the art designers, the back-end programmers, and the testers to improve the products."
+            ],
+            "points": [
+                "Built up the H5 web games using LayaAir.", "Used the PureMVC framework to build and maintain the apps.", "Used the plugins such as GreenSock, Smart Fox Server, etc.", "Understand how to use Cordova to package mobile apps.", "Understand how to compress, control and load assets.", "Experiences in using the game engine by Flash/AIR, Unity.", "Designed multiple layouts and multi-themes gameplay that applied to different devices."
+            ]
+        },
+        "official-website": {
+            "name": "Official Website",
+            "note": "RWD: Desktop, Laptop, Mobile ver.",
+            "description": [
+                "The goal of the official website is to establish corporate images and provide the description and the trial link of products for customers.", "In order to let customers experience the diversity of products and how they work on cross-devices, the website also provides different layouts when applying on different devices."
+            ],
+            "points": [
+                "Built up H5 single-page and responsive web pages using the Vue.js framework.", "Used the plugins such as GreenSock, Swiper, jQuery, Vuex, Router, Axios, i18n, etc.", "Designed multiple layouts for different devices and multi-language service."
+            ]
+        },
+        "mpz-utilities": {
+            "name": "Utilities",
+            "note": "Side-project",
+            "description": [
+                "Provides some functions of Objects, Arrays, Strings, Math and etc. prototypes.", "Builds a class DeepProxy, some functions of Decorators and MVVM-like framework by myself."
+            ],
+            "points": [
+                "Big deeper into understanding and using Decorator and Proxy."
+            ]
+        },
+        "mpz-i18n": {
+            "name": "Tranlation Exportor",
+            "note": "Side-project",
+            "description": [
+                "Use Google Spreadsheet to build a multi-language projects. In addition to be a database, cooperation with non-programer staff conveniently and streamline its workflow."
+            ],
+            "points": [
+                "Use Google Script to control Google Spreadsheet and use Node.js script to access Google Spreadsheet."
+            ]
+        },
+        "personal-resume-2021": {
+            "name": "Personal Resume 2021",
+            "note": "Side-project",
+            "description": [
+                "Introduce my personal work experience, skills and some portfolios."
+            ],
+            "points": [
+                "Use Vue 3.0 framework and implement infinite scroll, parallax scroll and etc."
+            ]
+        },
+        "creator-card": {
+            "name": "Creator Card",
+            "note": "Side-project",
+            "description": [
+                "Users can create their own creator card."
+            ],
+            "points": [
+                "Use Vue 2.0 + TypeScript + SCSS + Pug, and implement drawing on Canvas, downloading the image from Canvas and etc."
+            ]
+        }
+    }
 }

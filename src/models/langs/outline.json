@@ -1,0 +1,16 @@
+{
+    "zht": {
+        "name": "繁體中文",
+        "config": {
+            "loading": "載入中",
+            "fontSize": ""
+        }
+    },
+    "en": {
+        "name": "English",
+        "config": {
+            "loading": "Loading",
+            "fontSize": ""
+        }
+    }
+}

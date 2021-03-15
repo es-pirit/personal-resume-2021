@@ -1,5 +1,7 @@
-.title {
-    color: #ba1417;
-    font-weight: bold;
-    font-size: 20px;
+$c-theme: #e2f6c4, #b2e268, #86c02c, #5a8e0a, #304c00, #1e2b0a;
+
+@mixin locale-en {
+    @at-root .locale-en #{&} {
+        @content;
+    }
 }

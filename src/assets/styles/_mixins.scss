@@ -1,0 +1,126 @@
+// Minimum width of each device
+$grid-breakpoints: (
+    xs: 0,              // Extra small: small to large handset / phone
+    sm: 600px,          // Small      : small to medium tablet
+    md: 960px,          // Medium     : large tablet to laptop
+    lg: 1280px - 16px,  // Large      : desktop
+    xl: 1920px - 16px,  // Extra large: 4k and ultra-wides / television
+);
+
+$breakpoint-xs: map-get($grid-breakpoints, xs);
+$breakpoint-sm: map-get($grid-breakpoints, sm);
+$breakpoint-md: map-get($grid-breakpoints, md);
+$breakpoint-lg: map-get($grid-breakpoints, lg);
+$breakpoint-xl: map-get($grid-breakpoints, xl);
+
+@mixin xxs-only {
+    @media all and (max-width: 360px) {
+        @content;
+    }
+}
+@mixin xs-only {
+    @media all and (max-width: $breakpoint-sm - 1px) {
+        @content;
+    }
+}
+@mixin sm-only {
+    @media all and (min-width: $breakpoint-sm) and (max-width: $breakpoint-md - 1px) {
+        @content;
+    }
+}
+@mixin md-only {
+    @media all and (min-width: $breakpoint-md) and (max-width: $breakpoint-lg - 1px) {
+        @content;
+    }
+}
+@mixin lg-only {
+    @media all and (min-width: $breakpoint-lg) and (max-width: $breakpoint-xl - 1px) {
+        @content;
+    }
+}
+@mixin xl-only {
+    @media all and (min-width: $breakpoint-xl) {
+        @content;
+    }
+}
+
+@mixin port-only {
+    @media all and (max-aspect-ratio: 13/9) /*and (orientation: portrait)*/ {
+        @content;
+    }
+}
+@mixin land-only {
+    @media all and (min-aspect-ratio: 13/9) /*and (orientation: landscape)*/ {
+        @content;
+    }
+}
+@mixin xxs-land-only {
+    @media all and (max-height: 360px) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin xs-land-only {
+    @media all and (max-height: $breakpoint-sm - 1px) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin sm-land-only {
+    @media all and (min-height: $breakpoint-sm) and (max-height: $breakpoint-md - 1px) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin md-land-only {
+    @media all and (min-height: $breakpoint-md) and (max-height: $breakpoint-lg - 1px) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin lg-land-only {
+    @media all and (min-height: $breakpoint-lg) and (max-height: $breakpoint-xl - 1px) and (orientation: landscape) {
+        @content;
+    }
+}
+@mixin xl-land-only {
+    @media all and (min-height: $breakpoint-xl) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin sm-and-down {
+    @media all and (max-width: $breakpoint-md - 1px) {
+        @content;
+    }
+}
+@mixin md-and-down {
+    @media all and (max-width: $breakpoint-lg - 1px) {
+        @content;
+    }
+}
+@mixin lg-and-down {
+    @media all and (max-width: $breakpoint-xl - 1px) {
+        @content;
+    }
+}
+
+@mixin sm-and-up {
+    @media all and (min-width: $breakpoint-sm) {
+        @content;
+    }
+}
+@mixin md-and-up {
+    @media all and (min-width: $breakpoint-md) {
+        @content;
+    }
+}
+@mixin lg-and-up {
+    @media all and (min-width: $breakpoint-lg) {
+        @content;
+    }
+}
+
+@mixin ios {
+    @supports (-webkit-overflow-scrolling: touch) {
+        @at-root .ua-safari #{&} {
+            @content;
+        }
+    }
+}

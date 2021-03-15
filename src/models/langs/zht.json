@@ -1,6 +1,173 @@
 {
-	"nav": {
-		"resume": "履歷",
-		"portfolio": "作品集"
-	}
+    "author": "張佑愷",
+    "nav": {
+        "resume": "履歷",
+        "portfolio": "作品集"
+    },
+    "implements": {
+        "resume": [
+            "Vue 3.0 框架", "響應式網頁設計", "無限滾動"
+        ],
+        "portfolio": [
+            "Vue 3.0 框架", "響應式網頁設計", "視差滾動", "GitHub API"
+        ]
+    },
+    "titles": {
+        "intro": "個人簡介",
+        "experiences": "工作經歷",
+        "education": "最高學歷",
+        "skills": "技能專長",
+        "description": "作品描述",
+        "points": "技術要點",
+        "demo": "預覽："
+    },
+    "intro": [
+        "個人專長於主流網頁框架 (Vue.js) 與H5遊戲引擎 (LayaAir)，並熟習 TypeScript 為主的程式設計，輔有企畫、繪圖與介面排版的能力，具耐心且熱衷於團隊合作，同時也有自信能夠獨立完成專案。", "至目前工作，主要負責博奕遊戲、網頁的前端，並能夠為不同裝置或平台設計出自適應式 (AWD) 與響應式 (RWD) 版型的互動與邏輯。同時，也作為美術與程式後端的溝通橋梁，使專案開發更有效率。此外，曾接過教育性質遊戲的案子，且兼職過數學與程式設計相關的教育類工作。", "對個人而言，若有機會接觸網頁設計、遊戲設計或數位創作的相關行業，是樂於其中且主動積極與學習的，也願意藉由這些能力與經歷為貴公司盡一份心力。"
+    ],
+    "experiences": [
+        {
+            "name": "菲律賓，東方集團 (OG，W-Tech)",
+            "content": [
+                "職務：前端技術，專案主導，2 年多 (現職)", "使用 Vue.js 框架開發博弈產品；目前使用 LayaAir 引擎開發下代博弈產品。", "主導前端專案，與菲律賓當地人協作。"
+            ]
+        },
+        {
+            "name": "艾法諾科技",
+            "content": [
+                "職務：前端技術組員，2 年半", "使用遊戲引擎 (LayaAir、Flash / AIR) 開發博奕產品、網頁框架 (Vue.js) 建置形象官網。", "作為美術與程式後端的溝通橋梁。"
+            ]
+        },
+        {
+            "name": "向上國際科技",
+            "content": [
+                "職務：ActionScript 3.0系統實習，暑期", "學習PureMVC框架，並協助程式除錯。"
+            ]
+        },
+        {
+            "name": "教育性質接案",
+            "content": [
+                "內容：教育遊戲設計與研究數據蒐集，4 件", "參與企劃，並獨自完成 UI 排版與程式設計。", "使用 PHP 存取 MySQL 資料庫以管理使用者的帳戶與研究數據的蒐集。"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "name": "國立彰化師範大學",
+            "content": [
+                "學歷：碩士畢業", "科系：資管系，數位內容科技所", "主修：遊戲設計、網頁前端設計、UI / UX設計"
+            ]
+        }
+    ],
+    "skills": [
+        {
+            "name": "精通Vue.js (Html 5 + TypeScript + Sass)",
+            "content": [
+                "主導開發博弈產品，並為裝置與平台設計響應式版型、多語系切換等能力。", "理解 Webpack 的基本配置與模塊化的使用。", "會 Vuex、Router、Axios、I18n、jQuery 等插件的使用。", "除精通 Vue.js 2.x，因熱於學習，針對新版 3.0 有使用的經驗。", "能夠為不同裝置或平台設計出相對應的版型。"
+            ]
+        },
+        {
+            "name": "精通LayaAir (TypeScript)",
+            "content": [
+                "熟習 ES 標準與 TypeScript 功能 (Decorator、Proxy、WebSocket)，並有其能力製作優化開發的工具 (如：DeepProxy、類 MVVM 框架等)", "使用 LayaAir 輔以 FairyGUI 設計響應式版型，並懂於思考如何優化資源的存取。", "具完整開發 H5 遊戲 (Slot、線上真人) 的經驗。", "具 PureMVC 框架的使用經驗。"
+            ]
+        },
+        {
+            "name": "其它",
+            "content": [
+                "具獨立製作與主導專案的經驗。", "曾有 Adobe Flash/AIR 遊戲引擎的開發經驗。", "具基礎 Google Script 操作雲端文件的開發經驗。", "具基礎 PHP 與存取 MySQL 的經驗。", "曾考取 Java 8 國際證照 OCAJP、OCPJP，對代碼編程的能力有所保證。"
+            ]
+        }
+    ],
+    "portfolio": {
+        "panda-mobile": {
+            "name": "OG Plus 線上真人",
+            "note": "AWD、RWD：桌機、手機版；試用：TEST 環境，任選用戶",
+            "description": [
+                "使用 Vue.js 建置的線上真人博弈，並主導該產品項目的製作，與菲律賓當地人協作。", "該內容包括多台下注功能，與多款遊戲 (百家樂、龍虎、炸金花、牛牛，與輪盤類)。", "該產品的開發到上線維護，從中學習到其文化與市場需求，更加了解前、後端的協作模式，以及學習到許多與圖形繪製、影片播放有關等技術的應用。"
+            ],
+            "points": [
+                "使用 Vue.js 框架建置的 H5 網頁遊戲；後考量優化與市場需求，目前正在著手改用 LayaAir 重構。", "使用 Paper.js 套件繪製路圖，以解決過多圖片元素的問題；使用 NodePlayer 套件播放即時串流。", "使用 WebSocket 協定與後端溝通。", "針對桌機與手機建置自適應式 (AWD) 的版型；其中手機建置響應式 (RWD) 的版型以支援直版與橫版。"
+            ]
+        },
+        "live-casino": {
+            "name": "真人荷官",
+            "note": "手機版",
+            "description": [
+                "使用遊戲引擎 LayaAir 建構手機版的網頁遊戲。", "隨著 Flash 的淘汰，私下接臨時的專案，於下班時間用有限的兩個月緊急完成前端的核心需求，包括大廳、百家樂，與多桌下注。"
+            ],
+            "points": [
+                "使用遊戲引擎 LayaAir 建置的 H5 網頁遊戲。", "使用 NodePlayer 套件播放即時串流。", "使用 WebSocket 協定與後端溝通。"
+            ]
+        },
+        "summon-magicrystal": {
+            "name": "魔晶召喚",
+            "note": "試用帳號：test，密碼：test",
+            "description": [
+                "使用遊戲引擎 Adobe AIR 建構桌機版的教育遊戲專案，其以國中牛頓的三大運動定律為教學內容。", "屬私下接案的專案。"
+            ],
+            "points": [
+                "使用遊戲引擎 Adobe AIR 建置的視窗應用遊戲。", "使用 AmfPHP 與後端溝通、存取資料庫。"
+            ]
+        },
+        "slot-ghost": {
+            "name": "電子拉霸遊戲",
+            "note": "AWD：桌機、手機版",
+            "description": [
+                "使用遊戲引擎建構可跨裝置的遊戲，並製作多款主題的玩法，讓客戶能夠體驗拉霸遊戲的趣味。", "在建構H5網頁遊戲部分，能夠獨立完成UI排版、程式前端，並與美術、程式後端良好溝通，也能夠配合測試人員完善產品。"
+            ],
+            "points": [
+                "使用遊戲引擎 LayaAir 建置的 H5 網頁遊戲。", "使用 PureMVC 框架建構、維護應用。", "使用 GreenSock、Smart Fox Server 等插件。", "了解如何使用 Cordova 打包手機版 App。", "了解如何處理資源壓縮、控制資源載入。", "該項目最終以 LayaAir 重構，有過遊戲引擎 Flash/AIR、Unity 製作的經驗。", "針對桌機與手機建置自適應式 (AWD) 的版型，與多款主題玩法。"
+            ]
+        },
+        "official-website": {
+            "name": "形象官網",
+            "note": "RWD：桌機、平版、手機版",
+            "description": [
+                "該官方網站的目標是建立客戶對公司的形象，並提供公司產品的介紹與試玩連結給客戶。", "為了讓客戶體驗產品的多樣性與跨裝置，網站也配合產品的多樣性在不同裝置上顯示不同的版型，使整體具有設計感與專業性。"
+            ],
+            "points": [
+                "使用 Vue.js 框架建構 H5 響應式網頁。", "使用 GreenSock、Swiper、jQuery、Vuex、Router、Axios、i18n 等插件。", "具不同裝置對應的版型，與多國語系切換的設計。"
+            ]
+        },
+        "mpz-utilities": {
+            "name": "自製的常用功能",
+            "note": "個人項目 (Side-project)",
+            "description": [
+                "提供物件、陣列、字串與數學等原型的方法。", "自製的 DeepProxy 類別、Decorator 相關方法與類 MVVM 框架。"
+            ],
+            "points": [
+                "深入了解 Decorator 與 Proxy 的使用"
+            ]
+        },
+        "mpz-i18n": {
+            "name": "語系輸出工具",
+            "note": "個人項目 (Side-project)",
+            "description": [
+                "使用 Google Spreadsheet 建立多語系項目。除了作為資料庫之外，方便與非程式人員的協作，也簡化語系的工作流程。"
+            ],
+            "points": [
+                "使用 Google Script 控制 Google 試算表與 Node.js 腳本存取 Google 試算表"
+            ]
+        },
+        "personal-resume-2021": {
+            "name": "個人履歷 2021",
+            "note": "個人項目 (Side-project)",
+            "description": [
+                "介紹個人的工作經驗、技能與展示作品集。"
+            ],
+            "points": [
+                "使用 Vue 3.0 框架，並實作無限滾動與視差滾動等技術。"
+            ]
+        },
+        "creator-card": {
+            "name": "創作家角色卡",
+            "note": "個人項目 (Side-project)",
+            "description": [
+                "使用者可以創建自己的創作家角色卡片。"
+            ],
+            "points": [
+                "使用 Vue 2.0 + TypeScript + SCSS + Pug，並實作 Canvas 繪製與下載圖像功能等技術"
+            ]
+        }
+    }
 }
