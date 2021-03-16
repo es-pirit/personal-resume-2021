@@ -50,7 +50,6 @@ export default {
             if (lastObservered.value) {
                 const ratio = previous[lastObservered.value].ratio;
                 const num = site.portfolio[lastObservered.value].numPreviews as number;
-            console.log(lastObservered.value, ratio, num);
                 if (num) {
                     return `background-image: url(${ require(`@/assets/images/portfolio/${ lastObservered.value }/img_preview${ (ratio * num >> 0).clamp(0, num - 1) }.jpg`) });`;
                 }
